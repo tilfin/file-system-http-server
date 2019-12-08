@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <title>fs-local-server</title>
+ </head>
+ <body>
+  <h1>fs-local-server</h1>
+  <main>
+   <fieldset>
+    <label>Listening Port</label>
+    <input id="listenPortNumber" type="number" value="13333">
+   </fieldset>
+   <fieldset>
+    <label>Mounting Directory</label>
+    <input id="directoryPathText" type="text" value="" readonly size="60">
+    <button id="folderSelect">Select folder</button>
+   </fieldset>
+   <p style="margin: 10px">
+    <button id="serverButton">Start server</button>
+   </p>
+  </main>
+  <script src="./renderer.js"></script>
+ </body>
+</html>
